@@ -1,0 +1,81 @@
+.dietplangrid {
+  display: grid;
+  height: auto;
+  width: auto;
+  grid-template-columns: auto auto;
+  padding: 2rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+}
+
+.dietplangrid-item {
+  background-color: rgb(219, 219, 136);
+  text-align: left;
+  padding: 5px;
+  height: 20rem;
+  width: 35vw;
+  border-radius: 20px;
+  position: relative; 
+}
+.dietplancontainer{
+  position: absolute;
+  top: 70%;
+  left: 20px;
+  right: 20px;
+
+  h2 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  p {
+    color: white;
+    font-size: 1.1rem;
+  }
+
+}
+
+
+.vegan{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.vegetarian{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.eggetarian{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.nonvegetarian{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+  .dietplangrid {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+
+  .dietplangrid-item {
+    height: 12rem;
+    width: auto;
+  }
+
+  .dietplancontainer{
+    top: 60%;
+    right: 0.5%;
+    left: 0.5%;
+    h{
+      font-size: 1rem;
+    }
+    p {
+      display: none;
+    }
+  }
+}

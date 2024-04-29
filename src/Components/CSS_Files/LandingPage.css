@@ -1,0 +1,408 @@
+/* ------------------------------------ BANNER 1 ------------------------------------ */
+.lpbanner1 {
+    position: relative;
+    background-image: url('../_Imgs/Gym2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 680px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lpbanner1_content {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    text-align: center;
+    padding: 2rem;
+    margin: 4rem;
+    width: 70rem;
+}
+
+.lpbanner1_content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    animation: fadeInUp 1s ease-out;
+}
+
+.lpbanner1_content p {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.lpbanner1_content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    animation: fadeInUp 1s ease-out;
+}
+
+
+@media screen and (max-width: 768px) {
+    .lpbanner1 {
+        height: auto;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ------------------------------------ BANNER 2 ------------------------------------ */
+
+.lpbanner2 {
+    /* background-color: #ffcc00; */
+    padding:2%;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+.lpbanner2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lpbanner2_card {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.lpb2card {
+    flex: 1;
+    height: 450px;
+    margin: 30px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.lpb2card_content {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    margin: 30px;
+    color: #fff;
+    z-index: 1;
+}
+
+.lpb2card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.lpb2card p {
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.lpb2card1 {
+    background-image: url('../_Imgs/Gym.jpg');
+}
+
+.lpb2card2 {
+    background-image: url('../_Imgs/Gym.jpg');
+}
+
+.lpb2card3 {
+    background-image: url('../_Imgs/Gym.jpg');
+}
+
+@media screen and (max-width: 768px) {
+    .lpbanner2_card {
+        display: block;
+        flex-direction: column;
+    }
+
+    .lpb2card {
+        margin-bottom: 20px;
+        height: 300px;
+    }
+}
+
+
+/* ------------------------------------ BANNER 3 ------------------------------------ */
+
+
+.lpbanner3 {
+    /* background-color: #ffcc00; */
+    padding: 0;
+    margin: 2%;
+    border-radius: 20px;
+    height: 35rem;
+    align-content: center;
+}
+
+.lpbanner3_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lpbanner3_text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.lpbanner3_image {
+    flex: 1;
+    height: 30rem;
+    text-align: right;
+}
+
+.lpbanner3_image img {
+    max-width: 100%;
+}
+
+.lpbanner3_text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.lpbanner3_text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.lpbanner3_text button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .lpbanner3{
+        height: 25rem;
+    }
+
+    .lpbanner3_content {
+        flex-direction: column;
+        
+    }
+
+    .lpbanner3_image img {
+        display: none;
+    }
+
+    .lpbanner3_text {
+        text-align: center;
+    }
+}
+
+/* ------------------------------------ BANNER 4 ------------------------------------ */
+
+.lpbanner4 {
+    /* background-color: #ffcc00; */
+    padding: 0;
+    margin: 2%;
+    height: 35rem;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.lpbanner4_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lpbanner4_image {
+    flex: 1;
+    height: 30rem;
+    padding: 0 20px;
+}
+
+.lpbanner4_image img {
+    max-width: 100%;
+}
+
+.lpbanner4_text {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.lpbanner4_text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.lpbanner4_text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.lpbanner4_text button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .lpbanner4{
+        height: 25rem;
+    }
+
+    .lpbanner4_content {
+        flex-direction: column;
+    }
+
+    .lpbanner4_image img {
+        display: none;
+    }
+
+    .lpbanner4_image,
+    .lpbanner4_text {
+        text-align: center;
+    }
+}
+
+/* ------------------------------------ BANNER 5 ------------------------------------ */
+
+
+.lpbanner5 {
+    /* background-color: #ffcc00; */
+    padding: 0;
+    margin: 2%;
+    border-radius: 20px;
+    height: 35rem;
+    align-items: center;
+    align-content: center;
+}
+
+.lpbanner5_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lpbanner5_text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.lpbanner5_image {
+    flex: 1;
+    height: 30rem;
+    text-align: right;
+}
+
+.lpbanner5_image img {
+    max-width: 100%;
+}
+
+.lpbanner5_text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.lpbanner5_text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.lpbanner5_text button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .lpbanner5{
+        height: 25rem;
+    }
+
+    .lpbanner5_content {
+        flex-direction: column;
+    }
+
+    .lpbanner5_image img {
+        display: none;
+    }
+
+    .lpbanner5_text {
+        text-align: center;
+    }
+}
+
+/* ------------------------------------ BANNER 6 ------------------------------------ */
+
+.review-carousel-container {
+    /* margin-bottom: 40px; */
+    height: 35rem;
+    align-items: center;
+    text-align: center;
+    width: 97%;
+    background: #ffcc00;
+    border-radius: 20px;
+  
+    h2 {
+      padding-bottom: 2rem;
+      transform: rotate(270deg);
+    }
+  
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+  .carousel {
+    padding: 2%;
+  }
+
+  .reviewcard {
+    background-color: #1f1f1f;
+    color: white;
+    border-radius: 8px;
+    padding: 30px 20px ;
+    margin: 20px;
+    text-align: center;
+    height: 50vh;
+    width: 40vh;
+    box-shadow: 0 0 20px black;
+  }
+  
+  
+

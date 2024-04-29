@@ -1,0 +1,97 @@
+.workoutgrid {
+  display: grid;
+  height: auto;
+  width: auto;
+  grid-template-columns: auto auto auto;
+  padding: 2rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+}
+
+.workoutgrid-item {
+  background-color: rgb(219, 219, 136);
+  text-align: left;
+  padding: 5px;
+  height: 20rem;
+  width: 25vw;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.workoutcontainer{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+
+  h2 {
+    color: #ffcc00;
+    font-size: 2rem;
+  }
+
+  p {
+    color: white;
+    font-size: 1.1rem;
+  }
+}
+
+.shoulder{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.chest{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.back{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.biceps{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.triceps{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.forearms{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.abs{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.buttocks{
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+.legs {
+  background: url("../_Imgs/Gym2.jpg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .workoutgrid {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+
+  .workoutgrid-item {
+    height: 12rem;
+    width: auto;
+  }
+  .workoutcontainer{
+    top: 70%;
+    h{
+      font-size: 1rem;
+    }
+    p {
+      display: none;
+    }
+  }
+}
