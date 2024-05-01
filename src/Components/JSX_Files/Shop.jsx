@@ -36,8 +36,12 @@ import smartwearable7 from "../_Imgs/Gym2.jpg";
 import smartwearable8 from "../_Imgs/Gym2.jpg";
 import smartwearable9 from "../_Imgs/Gym2.jpg";
 import smartwearable10 from "../_Imgs/Gym2.jpg";
+import Add from "../Comp/Add";
 
-const Shop = () => {
+const Shop = ({ value, setValue }) => {
+    const handleAddButton = () => {
+        setValue(value + 1);
+    }
     const supplementData = [
         { id: 1, text: 'Supplement 1', MRP: '1000', Price: '500/-', imageUrl: supplement1 },
         { id: 2, text: 'Supplement 2', MRP: '1000', Price: '500/-', imageUrl: supplement2 },
@@ -104,7 +108,8 @@ const Shop = () => {
                                 <p style={{ marginTop: '15px' }}>{item.text}</p>
                                 <p><del>MRP. {item.MRP}/-</del></p>
                                 <p>Rs.{item.Price}</p>
-                                <button>Add To Cart</button>
+                                {/* <Add /> */}
+                                <button>Add</button>
                             </div>
                         ))}
                     </Carousel>
@@ -135,7 +140,7 @@ const Shop = () => {
                                 <p style={{ marginTop: '15px' }}>{item.text}</p>
                                 <p><del>MRP. {item.MRP}/-</del></p>
                                 <p>Rs.{item.Price}</p>
-                                <button>Add To Cart</button>
+                                <Add />
                             </div>
                         ))}
                     </Carousel>
@@ -163,11 +168,11 @@ const Shop = () => {
                     >
                         {wearableData.map((item) => (
                             <div key={item.id} className="card">
-                                 <img src={item.imageUrl} alt={item.text} style={{ width: '40vh' }} />
+                                <img src={item.imageUrl} alt={item.text} style={{ width: '40vh' }} />
                                 <p style={{ marginTop: '15px' }}>{item.text}</p>
                                 <p><del>MRP. {item.MRP}/-</del></p>
                                 <p>Rs.{item.Price}</p>
-                                <button>Add To Cart</button>
+                                <Add />
                             </div>
                         ))}
                     </Carousel>

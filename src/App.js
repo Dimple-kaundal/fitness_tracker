@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import NavBar from "./Components/JSX_Files/NavBar.jsx";
 import LandingPage from "./Components/JSX_Files/LandingPage.jsx";
@@ -9,12 +9,15 @@ import AboutUs from "./Components/JSX_Files/AboutUs.jsx";
 import Cart from "./Components/JSX_Files/Cart.jsx";
 import SignUp from "./Components/JSX_Files/SignUp.jsx";
 import Footer from "./Components/JSX_Files/Footer.jsx";
+import SignIn from "./Components/JSX_Files/SignIn.jsx";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 
+
 function App() {
+  const [value, setValue] = useState(0);
   return (
     <>
       <BrowserRouter>
@@ -23,10 +26,11 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="Workout" element={<Workout />} />
           <Route path="DietPlan" element={<DietPlan />} />
-          <Route path="Shop" element={<Shop />} />
+          <Route path="Shop" element={<Shop setValue={setValue} value={value} />} />
           <Route path="AboutUs" element={<AboutUs />} />
-          <Route path="Cart" element={<Cart />} />
+          <Route path="Cart" element={<Cart setValue={setValue} value={value} />} />
           <Route path="SignUp" element={<SignUp />} />
+          <Route path="SignIn" element={<SignIn />} />
         </Routes>
         <Footer />
       </BrowserRouter>
