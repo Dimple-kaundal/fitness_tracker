@@ -1,0 +1,30 @@
+.cartproduct{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 2rem;
+    /* height: 7rem; */
+}
+
+.cartproduct img{
+    border-radius: .5rem;
+    margin: .5rem 1rem;
+}
+
+.cartitemname{
+    width: 60%;
+}
+.cartitemprice{
+    width: 20%;
+}
+
+.cart h1{
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: #ffcc00;
+    text-align: center;
+    /* box-shadow: 0 0 10px black; */
+}
