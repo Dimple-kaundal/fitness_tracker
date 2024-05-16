@@ -9,12 +9,18 @@ import Cart from "./Components/JSX_Files/Cart.jsx";
 import SignUp from "./Components/JSX_Files/SignUp.jsx";
 import Footer from "./Components/JSX_Files/Footer.jsx";
 import SignIn from "./Components/JSX_Files/SignIn.jsx";
+import PlaceOrder from "./Components/JSX_Files/PlaceOrder.jsx";
+import UserProfile from "./Components/JSX_Files/UserProfile.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
+
+
 function App() {
   const [value, setValue] = useState([]);
+  const [globalUser, setGlobalUser] = useState(null);
+  console.log("user set to", globalUser);
   return (
     <>
       <BrowserRouter>
@@ -23,11 +29,13 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="Workout" element={<Workout />} />
           <Route path="DietPlan" element={<DietPlan />} />
-          <Route path="Shop" element={<Shop value={value} setValue={setValue} />}/>
+          <Route path="Shop" element={<Shop value={value} setValue={setValue} />} />
           <Route path="AboutUs" element={<AboutUs />} />
-          <Route path="Cart" element={<Cart value={value} setValue={setValue} />}/>
+          <Route path="Cart" element={<Cart value={value} setValue={setValue} />} />
+          <Route path="PlaceOrder" element={<PlaceOrder />} />
           <Route path="SignUp" element={<SignUp />} />
-          <Route path="SignIn" element={<SignIn />} />
+          <Route path="SignIn" element={<SignIn globalUser={globalUser} setGlobalUser={setGlobalUser} />} />
+          <Route path="UserProfile" element={<UserProfile globalUser={globalUser} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

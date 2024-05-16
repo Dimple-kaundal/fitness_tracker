@@ -13,7 +13,6 @@ export const Workout = () => {
             <h2>Shoulder</h2>
             <p>The shoulder muscles include the deltoids, which consist of anterior, medial, and posterior heads, responsible for various movements such as abduction, flexion, extension, and rotation of the arm.</p>
           </div>
-
         </div>
 
         <div className="workoutgrid-item chest">

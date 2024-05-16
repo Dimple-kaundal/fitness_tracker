@@ -18,7 +18,6 @@ import review8 from "../_Imgs/Gym2.jpg";
 import review9 from "../_Imgs/Gym2.jpg";
 import review10 from "../_Imgs/Gym2.jpg";
 
-import ReviewBanner from './ReviewBanner.jsx';
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
@@ -35,10 +34,11 @@ const LandingPage = () => {
         { id: 9, rating: 'Supplement 9', review: '1000',  imageUrl: review9 },
         { id: 10, rating: 'Supplement 10', review: '1000',  imageUrl: review10 },
 
-    ];
+    ];  
 
     return (
         <>
+        <div className="landingPage">
             {/*------------------------------------ BANNER 1 ------------------------------------*/}
             <div className="lpbanner1">
                 <div className="lpbanner1_content">
@@ -94,7 +94,7 @@ const LandingPage = () => {
 
             {/*------------------------------------ BANNER 4 ------------------------------------*/}
 
-            <div className="lpbanner4">
+             <div className="lpbanner4">
                 <div className="lpbanner4_content">
                     <div className="lpbanner4_image">
                         <img src={Banner3_img} alt="Banner Image" />
@@ -151,6 +151,7 @@ const LandingPage = () => {
                     </Carousel>
                 </div>
                 
+            </div>
             </div>
 
 

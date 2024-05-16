@@ -5,6 +5,16 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+button{
+  padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;

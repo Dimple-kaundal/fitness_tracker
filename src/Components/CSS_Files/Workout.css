@@ -39,23 +39,23 @@
 }
 
 .shoulder{
-  background: url("../_Imgs/Gym2.jpg");
+  background: url("../_Imgs/Shoulders.jpeg");
   background-size: cover;
 }
 .chest{
-  background: url("../_Imgs/Gym2.jpg");
+  background: url("../_Imgs/Chest.jpg");
   background-size: cover;
 }
 .back{
-  background: url("../_Imgs/Gym2.jpg");
+  background: url("../_Imgs/Back.jpeg");
   background-size: cover;
 }
 .biceps{
-  background: url("../_Imgs/Gym2.jpg");
+  background: url("../_Imgs/Biceps.jpg");
   background-size: cover;
 }
 .triceps{
-  background: url("../_Imgs/Gym2.jpg");
+  background: url("../_Imgs/Triceps.jpeg");
   background-size: cover;
 }
 .forearms{
@@ -63,7 +63,7 @@
   background-size: cover;
 }
 .abs{
-  background: url("../_Imgs/Gym2.jpg");
+  background: url("../_Imgs/Abs.jpeg");
   background-size: cover;
 }
 .buttocks{
@@ -71,7 +71,7 @@
   background-size: cover;
 }
 .legs {
-  background: url("../_Imgs/Gym2.jpg");
+  background: url("../_Imgs/Legs.jpg");
   background-size: cover;
 }
 

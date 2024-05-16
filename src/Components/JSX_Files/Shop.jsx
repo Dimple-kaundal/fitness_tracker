@@ -4,39 +4,39 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../CSS_Files/Shop.css";
 
-import supplement1 from "../_Imgs/Gym2.jpg";
-import supplement2 from "../_Imgs/Gym2.jpg";
-import supplement3 from "../_Imgs/Gym2.jpg";
-import supplement4 from "../_Imgs/Gym2.jpg";
-import supplement5 from "../_Imgs/Gym2.jpg";
-import supplement6 from "../_Imgs/Gym2.jpg";
-import supplement7 from "../_Imgs/Gym2.jpg";
-import supplement8 from "../_Imgs/Gym2.jpg";
-import supplement9 from "../_Imgs/Gym2.jpg";
-import supplement10 from "../_Imgs/Gym2.jpg";
+import supplement1 from "../_Imgs/Supplement1.jpg";
+import supplement2 from "../_Imgs/Supplement2.jpg";
+import supplement3 from "../_Imgs/Supplement3.webp";
+import supplement4 from "../_Imgs/Supplement4.jpg";
+import supplement5 from "../_Imgs/Supplement5.jpg";
+import supplement6 from "../_Imgs/Supplement6.jpg";
+import supplement7 from "../_Imgs/Supplement7.webp";
+import supplement8 from "../_Imgs/Supplement8.jpg";
+import supplement9 from "../_Imgs/Supplement9.jpg";
+import supplement10 from "../_Imgs/Supplement10.jpg";
 
-import Equipment1 from "../_Imgs/Gym2.jpg";
-import Equipment2 from "../_Imgs/Gym2.jpg";
-import Equipment3 from "../_Imgs/Gym2.jpg";
-import Equipment4 from "../_Imgs/Gym2.jpg";
-import Equipment5 from "../_Imgs/Gym2.jpg";
-import Equipment6 from "../_Imgs/Gym2.jpg";
-import Equipment7 from "../_Imgs/Gym2.jpg";
-import Equipment8 from "../_Imgs/Gym2.jpg";
-import Equipment9 from "../_Imgs/Gym2.jpg";
-import Equipment10 from "../_Imgs/Gym2.jpg";
+import Equipment1 from "../_Imgs/Equipment1.jpg";
+import Equipment2 from "../_Imgs/Equipment2.jpg";
+import Equipment3 from "../_Imgs/Equipment3.jpg";
+import Equipment4 from "../_Imgs/Equipment4.jpg";
+import Equipment5 from "../_Imgs/Equipment5.jpg";
+import Equipment6 from "../_Imgs/Equipment6.jpg";
+import Equipment7 from "../_Imgs/Equipment7.jpg";
+import Equipment8 from "../_Imgs/Equipment8.jpg";
+import Equipment9 from "../_Imgs/Equipment9.jpg";
+import Equipment10 from "../_Imgs/Equipment10.webp";
 
-import smartwearable1 from "../_Imgs/Gym2.jpg";
-import smartwearable2 from "../_Imgs/Gym2.jpg";
-import smartwearable3 from "../_Imgs/Gym2.jpg";
-import smartwearable4 from "../_Imgs/Gym2.jpg";
-import smartwearable5 from "../_Imgs/Gym2.jpg";
-import smartwearable6 from "../_Imgs/Gym2.jpg";
-import smartwearable7 from "../_Imgs/Gym2.jpg";
-import smartwearable8 from "../_Imgs/Gym2.jpg";
-import smartwearable9 from "../_Imgs/Gym2.jpg";
-import smartwearable10 from "../_Imgs/Gym2.jpg";
-import Add from "../Comp/Add";
+import smartwearable1 from "../_Imgs/SmartWearable1.jpg";
+import smartwearable2 from "../_Imgs/SmartWearable2.jpg";
+import smartwearable3 from "../_Imgs/SmartWearable3.jpg";
+import smartwearable4 from "../_Imgs/SmartWearable4.webp";
+import smartwearable5 from "../_Imgs/SmartWearable5.jpg";
+import smartwearable6 from "../_Imgs/SmartWearable6.jpg";
+import smartwearable7 from "../_Imgs/SmartWearable7.jpg";
+import smartwearable8 from "../_Imgs/SmartWearable8.jpg";
+import smartwearable9 from "../_Imgs/SmartWearable9.jpg";
+import smartwearable10 from "../_Imgs/SmartWearable10.jpg";
+
 
 const Shop = ({ value, setValue }) => {
   const handleAddToCart = (item) => {
@@ -287,7 +287,7 @@ const Shop = ({ value, setValue }) => {
                 <img
                   src={item.imageUrl}
                   alt={item.text}
-                  style={{ width: "40vh" }}
+                  style={{ width: "30vh", height: "27vh" }}
                 />
                 <p style={{ marginTop: "15px" }}>{item.text}</p>
                 <p>
@@ -326,7 +326,7 @@ const Shop = ({ value, setValue }) => {
                 <img
                   src={item.imageUrl}
                   alt={item.text}
-                  style={{ width: "40vh" }}
+                  style={{ width: "30vh", height: "27vh" }}
                 />
                 <p style={{ marginTop: "15px" }}>{item.text}</p>
                 <p>
@@ -363,7 +363,7 @@ const Shop = ({ value, setValue }) => {
                 <img
                   src={item.imageUrl}
                   alt={item.text}
-                  style={{ width: "40vh" }}
+                  style={{ width: "30vh", height: "27vh" }}
                 />
                 <p style={{ marginTop: "15px" }}>{item.text}</p>
                 <p>
