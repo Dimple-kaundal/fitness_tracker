@@ -15,9 +15,27 @@ import UserProfile from "./Components/JSX_Files/UserProfile.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Shoulder1 from "./Components/_Imgs/Abs.jpeg";
+import Shoulder3 from "./Components/_Imgs/Abs.jpeg";
+import Shoulder2 from "./Components/_Imgs/Abs.jpeg";
+import Shoulder5 from "./Components/_Imgs/Abs.jpeg";
+import Shoulder4 from "./Components/_Imgs/Abs.jpeg";
+import Shoulder6 from "./Components/_Imgs/Abs.jpeg";
+import Shoulder7 from "./Components/_Imgs/Abs.jpeg";
+
+const shoulder = [
+  { id: 1, text: "Dumbbell Front Raises", imageUrl: Shoulder1 },
+  { id: 2, text: "Overhead Presses", imageUrl: Shoulder2 },
+  { id: 3, text: "Lateral Raises", imageUrl: Shoulder3 },
+  { id: 4, text: "Upright Rows", imageUrl: Shoulder4 },
+  { id: 5, text: "Bent Over Rows", imageUrl: Shoulder5 },
+  { id: 6, text: "Reverse Flyes", imageUrl: Shoulder6 },
+  { id: 7, text: "Face Pulls", imageUrl: Shoulder7 },
+];
 function App() {
   const [value, setValue] = useState([]);
   const [globalUser, setGlobalUser] = useState(null);
+  const [exercise, setExercise] = useState(shoulder || []);
   console.log("user set to", globalUser);
   return (
     <>
@@ -25,18 +43,40 @@ function App() {
         <NavBar value={value} />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="Workout" element={<Workout />} />
+          <Route
+            path="Workout"
+            element={<Workout setExercise={setExercise} />}
+          />
           <Route path="DietPlan" element={<DietPlan />} />
-          <Route path="Shop" element={<Shop value={value} setValue={setValue} />} />
+          <Route
+            path="Shop"
+            element={<Shop value={value} setValue={setValue} />}
+          />
           <Route path="AboutUs" element={<AboutUs />} />
-          <Route path="Cart" element={<Cart value={value} setValue={setValue} />} />
+          <Route
+            path="Cart"
+            element={<Cart value={value} setValue={setValue} />}
+          />
           <Route path="PlaceOrder" element={<PlaceOrder />} />
           <Route path="SignUp" element={<SignUp />} />
-          <Route path="SignIn" element={<SignIn globalUser={globalUser} setGlobalUser={setGlobalUser} />} />
-          <Route path="UserProfile" element={<UserProfile globalUser={globalUser} />} />
+          <Route
+            path="SignIn"
+            element={
+              <SignIn globalUser={globalUser} setGlobalUser={setGlobalUser} />
+            }
+          />
+          <Route
+            path="UserProfile"
+            element={<UserProfile globalUser={globalUser} />}
+          />
+          <Route
+            path="Workout/Exercises"
+            element={
+              <Exercises exercise={exercise} setExercise={setExercise} />
+            }
+          />
         </Routes>
         <Footer />
-        <Exercises/>
       </BrowserRouter>
     </>
   );
