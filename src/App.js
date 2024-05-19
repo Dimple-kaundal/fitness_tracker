@@ -14,28 +14,10 @@ import PlaceOrder from "./Components/JSX_Files/PlaceOrder.jsx";
 import UserProfile from "./Components/JSX_Files/UserProfile.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Shoulder1 from "./Components/_Imgs/Abs.jpeg";
-import Shoulder3 from "./Components/_Imgs/Abs.jpeg";
-import Shoulder2 from "./Components/_Imgs/Abs.jpeg";
-import Shoulder5 from "./Components/_Imgs/Abs.jpeg";
-import Shoulder4 from "./Components/_Imgs/Abs.jpeg";
-import Shoulder6 from "./Components/_Imgs/Abs.jpeg";
-import Shoulder7 from "./Components/_Imgs/Abs.jpeg";
-
-const shoulder = [
-  { id: 1, text: "Dumbbell Front Raises", imageUrl: Shoulder1 },
-  { id: 2, text: "Overhead Presses", imageUrl: Shoulder2 },
-  { id: 3, text: "Lateral Raises", imageUrl: Shoulder3 },
-  { id: 4, text: "Upright Rows", imageUrl: Shoulder4 },
-  { id: 5, text: "Bent Over Rows", imageUrl: Shoulder5 },
-  { id: 6, text: "Reverse Flyes", imageUrl: Shoulder6 },
-  { id: 7, text: "Face Pulls", imageUrl: Shoulder7 },
-];
 function App() {
   const [value, setValue] = useState([]);
   const [globalUser, setGlobalUser] = useState(null);
-  const [exercise, setExercise] = useState(shoulder || []);
+  const [exercise, setExercise] = useState([]);
   console.log("user set to", globalUser);
   return (
     <>

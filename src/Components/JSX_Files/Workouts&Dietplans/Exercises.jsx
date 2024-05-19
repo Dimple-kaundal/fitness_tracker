@@ -11,7 +11,6 @@ const Exercises = ({ exercise }) => {
             <div className="exerciseCard" key={item.id}>
               <img src={item.imageUrl} alt="exercise" />
               <h3>{item.text}</h3>
-              
             </div>
           ))}
         </div>

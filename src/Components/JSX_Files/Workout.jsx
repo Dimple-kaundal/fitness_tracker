@@ -2,6 +2,7 @@ import React from "react";
 import "../CSS_Files/Workout.css";
 
 import Banner2_img from "../_Imgs/Gym.jpg";
+
 import Shoulder1 from "../_Imgs/Abs.jpeg";
 import Shoulder3 from "../_Imgs/Abs.jpeg";
 import Shoulder2 from "../_Imgs/Abs.jpeg";
@@ -160,12 +161,16 @@ export const Workout = ({ setExercise }) => {
 
   const handleExercise = (exercise) => {
     setExercise(exercise);
+    console.log(exercise);
     navigate("/Workout/Exercises");
   };
   return (
     <>
-      <div className="workoutgrid" onClick={() => handleExercise(shoulder)}>
-        <div className="workoutgrid-item shoulder">
+      <div className="workoutgrid">
+        <div
+          className="workoutgrid-item shoulder"
+          onClick={() => handleExercise(shoulder)}
+        >
           <div className="workoutcontainer">
             <h2>Shoulder</h2>
             <p>
