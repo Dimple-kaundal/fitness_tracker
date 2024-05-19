@@ -45,7 +45,7 @@ export const Workout = () => {
 
         <div className="workoutgrid-item forearms">
           <div className="workoutcontainer">
-            <h2>Forearms</h2>
+            <h2>Forearm</h2>
             <p>The forearm muscles, including the flexors and extensors, control wrist and finger movements and support grip strength.</p>
           </div>
         </div>

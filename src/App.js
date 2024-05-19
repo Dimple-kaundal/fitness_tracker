@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./Components/JSX_Files/NavBar.jsx";
 import LandingPage from "./Components/JSX_Files/LandingPage.jsx";
 import Workout from "./Components/JSX_Files/Workout.jsx";
+import Exercises from "./Components/JSX_Files/Workouts&Dietplans/Exercises.jsx";
 import DietPlan from "./Components/JSX_Files/DietPlan.jsx";
 import Shop from "./Components/JSX_Files/Shop.jsx";
 import AboutUs from "./Components/JSX_Files/AboutUs.jsx";
@@ -13,9 +14,6 @@ import PlaceOrder from "./Components/JSX_Files/PlaceOrder.jsx";
 import UserProfile from "./Components/JSX_Files/UserProfile.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
-
 
 function App() {
   const [value, setValue] = useState([]);
@@ -38,6 +36,7 @@ function App() {
           <Route path="UserProfile" element={<UserProfile globalUser={globalUser} />} />
         </Routes>
         <Footer />
+        <Exercises/>
       </BrowserRouter>
     </>
   );
