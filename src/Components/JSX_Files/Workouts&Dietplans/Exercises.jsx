@@ -5,12 +5,12 @@ const Exercises = ({ exercise }) => {
   return (
     <>
       <div className="exercises">
-        <h1>Shoulder Workout</h1>
+        <h1></h1>
         <div className="exerciseContainer">
           {exercise.map((item) => (
-            <div className="exerciseCard" key={item.id}>
+            <div className="muscleexercise" key={item.id}>
+               <h3>{item.text}</h3>
               <img src={item.imageUrl} alt="exercise" />
-              <h3>{item.text}</h3>
             </div>
           ))}
         </div>
