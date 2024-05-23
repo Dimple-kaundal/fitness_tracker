@@ -130,7 +130,6 @@ export const DietPlan = ({ setDiets }) => {
     navigate("/Workout/Diets");
   };
 
-  
   return (
     <>
 

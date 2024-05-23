@@ -87,6 +87,7 @@ export const Workout = ({ setExercise }) => {
     { id: 6, text: "Reverse Flyes", imageUrl: Shoulder6 },
     { id: 7, text: "Face Pulls", imageUrl: Shoulder7 },
   ];
+
   const chest = [
     { id: 1, text: "Push Ups", imageUrl: chest1 },
     { id: 2, text: "Bench Press", imageUrl: chest2 },
@@ -96,6 +97,7 @@ export const Workout = ({ setExercise }) => {
     { id: 6, text: "Decline Push Ups", imageUrl: chest6 },
     { id: 7, text: "Decline Dumbbell Press", imageUrl: chest7 },
   ];
+
   const back = [
     { id: 1, text: "Pull Ups", imageUrl: back1 },
     { id: 2, text: "Bent Over Rows", imageUrl: back2 },
@@ -105,6 +107,7 @@ export const Workout = ({ setExercise }) => {
     { id: 6, text: "Deadlifts", imageUrl: back6 },
     { id: 7, text: "Back Extensions", imageUrl: back7 },
   ];
+
   const biceps = [
     { id: 1, text: "Bicep Curls", imageUrl: biceps1 },
     { id: 2, text: "Hammer Curls", imageUrl: biceps2 },
@@ -114,6 +117,7 @@ export const Workout = ({ setExercise }) => {
     { id: 6, text: "Incline Dumbbell Curls", imageUrl: biceps6 },
     { id: 7, text: "Drag Curls", imageUrl: biceps7 },
   ];
+
   const triceps = [
     { id: 1, text: "Tricep Dips", imageUrl: triceps1 },
     { id: 2, text: "Close Grip Bench Press", imageUrl: triceps2 },
@@ -123,6 +127,7 @@ export const Workout = ({ setExercise }) => {
     { id: 6, text: "Diamond Push Ups", imageUrl: triceps6 },
     { id: 7, text: "Tricep kickbacks", imageUrl: triceps7 },
   ];
+  
   const forearm = [
     { id: 1, text: "Wrist Curls", imageUrl: forearm1 },
     { id: 2, text: "Reverse Wrist Curls", imageUrl: forearm2 },
@@ -131,6 +136,7 @@ export const Workout = ({ setExercise }) => {
     { id: 5, text: "Towel Pull Ups", imageUrl: forearm5 },
     { id: 6, text: "Grip Squeezes", imageUrl: forearm6 },
   ];
+
   const abs = [
     { id: 1, text: "Crunches", imageUrl: abs1 },
     { id: 2, text: "Planks", imageUrl: abs2 },
@@ -140,6 +146,7 @@ export const Workout = ({ setExercise }) => {
     { id: 6, text: "Bird Dogs", imageUrl: abs6 },
     { id: 7, text: "Vaccum Exercise", imageUrl: abs7 },
   ];
+  
   const buttocks = [
     { id: 1, text: "Squats", imageUrl: buttocks1 },
     { id: 2, text: "Lunges", imageUrl: buttocks2 },
@@ -149,6 +156,7 @@ export const Workout = ({ setExercise }) => {
     { id: 6, text: "Lateral Leg Raises", imageUrl: buttocks6 },
     { id: 7, text: "Hip Abduction", imageUrl: buttocks7 },
   ];
+  
   const legs = [
     { id: 1, text: "Squats", imageUrl: legs1 },
     { id: 2, text: "Leg Presses", imageUrl: legs2 },

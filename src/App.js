@@ -32,7 +32,7 @@ function App() {
             path="Workout"
             element={<Workout setExercise={setExercise} />}
           />
-          <Route path="DietPlan" element={<DietPlan />} />
+          <Route path="DietPlan" element={<DietPlan setDiets={setDiets} />} />
           <Route
             path="Shop"
             element={<Shop value={value} setValue={setValue} />}
@@ -62,9 +62,7 @@ function App() {
           />
           <Route
             path="Workout/Diets"
-            element={
-              <Diets diets={diets} setDiets={setDiets} />
-            }
+            element={<Diets diets={diets} setDiets={setDiets} />}
           />
         </Routes>
         <Footer />
