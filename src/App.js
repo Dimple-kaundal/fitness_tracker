@@ -3,6 +3,7 @@ import NavBar from "./Components/JSX_Files/NavBar.jsx";
 import LandingPage from "./Components/JSX_Files/LandingPage.jsx";
 import Workout from "./Components/JSX_Files/Workout.jsx";
 import Exercises from "./Components/JSX_Files/Workouts&Dietplans/Exercises.jsx";
+import Diets from "./Components/JSX_Files/Workouts&Dietplans/Diets.jsx";
 import DietPlan from "./Components/JSX_Files/DietPlan.jsx";
 import Shop from "./Components/JSX_Files/Shop.jsx";
 import AboutUs from "./Components/JSX_Files/AboutUs.jsx";
@@ -14,10 +15,12 @@ import PlaceOrder from "./Components/JSX_Files/PlaceOrder.jsx";
 import UserProfile from "./Components/JSX_Files/UserProfile.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   const [value, setValue] = useState([]);
   const [globalUser, setGlobalUser] = useState(null);
   const [exercise, setExercise] = useState([]);
+  const [diets, setDiets] = useState([]);
   console.log("user set to", globalUser);
   return (
     <>
@@ -55,6 +58,12 @@ function App() {
             path="Workout/Exercises"
             element={
               <Exercises exercise={exercise} setExercise={setExercise} />
+            }
+          />
+          <Route
+            path="Workout/Diets"
+            element={
+              <Diets diets={diets} setDiets={setDiets} />
             }
           />
         </Routes>
