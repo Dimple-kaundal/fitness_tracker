@@ -44,12 +44,7 @@ function App() {
           />
           <Route path="PlaceOrder" element={<PlaceOrder />} />
           <Route path="SignUp" element={<SignUp />} />
-          <Route
-            path="SignIn"
-            element={
-              <SignIn globalUser={globalUser} setGlobalUser={setGlobalUser} />
-            }
-          />
+          <Route path="SignIn" element={<SignIn />} />
           <Route
             path="UserProfile"
             element={<UserProfile globalUser={globalUser} />}

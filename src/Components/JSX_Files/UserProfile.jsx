@@ -1,26 +1,26 @@
-import React from 'react'
-import '../CSS_Files/UserProfile.css'
+import React from "react";
+import "../CSS_Files/UserProfile.css";
 
-import userDp from "../_Imgs/Gym2.jpg"
-
+import userDp from "../_Imgs/Gym2.jpg";
+import { useUser } from "../../userContext";
 const UserProfile = ({ globalUser }) => {
-  const name = globalUser.firstName;
-  console.log(globalUser);
-
+  const { userData } = useUser();
+  console.log("user set to ", userData);
   return (
     <>
-     
       <div className="userProfile">
-        <div className="userDp">
+        {/* <div className="userDp">
           <img src={userDp} alt="" />
-        </div>
+        </div> */}
         <div className="userDetails">
-          <h2>Fname Lname</h2>
-          <p>email.com</p>
+          <h2>
+            {userData.firstName} {userData.lastName}
+          </h2>
+          <p>{userData.email}</p>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default UserProfile;
