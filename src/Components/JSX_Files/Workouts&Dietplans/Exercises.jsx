@@ -5,12 +5,11 @@ const Exercises = ({ exercise }) => {
   return (
     <>
       <div className="exercises">
-        <h1></h1>
         <div className="exerciseContainer">
           {exercise.map((item) => (
             <div className="muscleexercise" key={item.id}>
-               <h3>{item.text}</h3>
-              <img src={item.imageUrl} alt="exercise" />
+              <h2>{item.text}</h2>
+              <video src={item.imageUrl} autoPlay loop muted></video>
             </div>
           ))}
         </div>

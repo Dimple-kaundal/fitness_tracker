@@ -1,25 +1,220 @@
-import React from "react";
-import "../../CSS_Files/Diets.css";
+import React from 'react'
+import '../../CSS_Files/Diets.css'
 
-const Diets = ({ diets, setDiets }) => {
-  const handleClickDiet = () => {
-    
-  };
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+const Diets = ({ diets }) => {
   return (
     <>
       <div className="diets">
-        <h1></h1>
         <div className="dietsContainer">
-          {diets.map((item) => (
-            <div className="dietsplans" key={item.id}>
-              <h2>{item.type}</h2>
-              <p>{item.breakfast}</p> <hr />
-              <p>{item.morningSnack}</p> <hr />
-              <p>{item.lunch}</p> <hr />
-              <p>{item.afternoonSnack}</p> <hr />
-              <p>{item.dinner}</p> <hr />
-            </div>
-          ))}
+          <h2>Monday</h2>
+          <table>
+            <tr>
+              <th>Meals</th>
+              {diets.map((item) => (
+                <th>{item.type}</th>
+              ))}
+            </tr>
+            <tr>
+              <th>Breakfast</th>
+              {diets.map((item) => (
+                <td>{item.breakfast}</td>
+              ))}
+            </tr>
+            <tr>
+              <th>Morning Snack</th>
+              {diets.map((item) => (
+                <td>{item.morningSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Lunch</th>
+              {diets.map((item) => (
+                <td>{item.lunch}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Afternoon Snack</th>
+              {diets.map((item) => (
+                <td>{item.afternoonSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Dinner</th>
+              {diets.map((item) => (
+                <td>{item.dinner}</td>
+              ))}
+            </tr>
+          </table>
+
+
+          <h2>Tuesday</h2>
+          <table>
+            <tr>
+              <th>Breakfast</th>
+              {diets.map((item) => (
+                <td>{item.breakfast}</td>
+              ))}
+            </tr>
+            <tr>
+              <th>Morning Snack</th>
+              {diets.map((item) => (
+                <td>{item.morningSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Lunch</th>
+              {diets.map((item) => (
+                <td>{item.lunch}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Afternoon Snack</th>
+              {diets.map((item) => (
+                <td>{item.afternoonSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Dinner</th>
+              {diets.map((item) => (
+                <td>{item.dinner}</td>
+              ))}
+            </tr>
+          </table>
+          <h2>Wednesday</h2>
+          <table>
+            <tr>
+              <th>Breakfast</th>
+              {diets.map((item) => (
+                <td>{item.breakfast}</td>
+              ))}
+            </tr>
+            <tr>
+              <th>Morning Snack</th>
+              {diets.map((item) => (
+                <td>{item.morningSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Lunch</th>
+              {diets.map((item) => (
+                <td>{item.lunch}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Afternoon Snack</th>
+              {diets.map((item) => (
+                <td>{item.afternoonSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Dinner</th>
+              {diets.map((item) => (
+                <td>{item.dinner}</td>
+              ))}
+            </tr>
+          </table>
+          <h2>Thursday</h2>
+          <table>
+            <tr>
+              <th>Breakfast</th>
+              {diets.map((item) => (
+                <td>{item.breakfast}</td>
+              ))}
+            </tr>
+            <tr>
+              <th>Morning Snack</th>
+              {diets.map((item) => (
+                <td>{item.morningSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Lunch</th>
+              {diets.map((item) => (
+                <td>{item.lunch}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Afternoon Snack</th>
+              {diets.map((item) => (
+                <td>{item.afternoonSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Dinner</th>
+              {diets.map((item) => (
+                <td>{item.dinner}</td>
+              ))}
+            </tr>
+          </table>
+          <h2>Friday</h2>
+          <table>
+            <tr>
+              <th>Breakfast</th>
+              {diets.map((item) => (
+                <td>{item.breakfast}</td>
+              ))}
+            </tr>
+            <tr>
+              <th>Morning Snack</th>
+              {diets.map((item) => (
+                <td>{item.morningSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Lunch</th>
+              {diets.map((item) => (
+                <td>{item.lunch}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Afternoon Snack</th>
+              {diets.map((item) => (
+                <td>{item.afternoonSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Dinner</th>
+              {diets.map((item) => (
+                <td>{item.dinner}</td>
+              ))}
+            </tr>
+          </table>
+          <h2>Saturday</h2>
+          <table>
+            <tr>
+              <th>Breakfast</th>
+              {diets.map((item) => (
+                <td>{item.breakfast}</td>
+              ))}
+            </tr>
+            <tr>
+              <th>Morning Snack</th>
+              {diets.map((item) => (
+                <td>{item.morningSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Lunch</th>
+              {diets.map((item) => (
+                <td>{item.lunch}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Afternoon Snack</th>
+              {diets.map((item) => (
+                <td>{item.afternoonSnack}</td>
+              ))}
+            </tr>
+            <tr>
+            <th>Dinner</th>
+              {diets.map((item) => (
+                <td>{item.dinner}</td>
+              ))}
+            </tr>
+          </table>
         </div>
       </div>
     </>

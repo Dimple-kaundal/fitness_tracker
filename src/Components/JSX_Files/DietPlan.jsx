@@ -23,12 +23,12 @@ export const DietPlan = ({ setDiets }) => {
       morningSnack: "Grab a handful of mixed nuts or a homemade protein energy ball for a quick boost.",
       lunch: "Enjoy a protein-packed quinoa salad with black beans, roasted sweet potatoes, kale, and a tangy tahini dressing.",
       afternoonSnack: "Dip some carrot and cucumber sticks into a creamy hummus for a satisfying snack.",
-      dinner: "- For dinner, indulge in a lentil and vegetable curry served over a bed of quinoa. Add a side of roasted Brussels sprouts for extra fiber and nutrients."
+      dinner: "For dinner, indulge in a lentil and vegetable curry served over a bed of quinoa. Add a side of roasted Brussels sprouts for extra fiber and nutrients."
     },
     {
       id: 3,
       type: "Loosing Weight",
-      breakfast: "- Kickstart your day with a refreshing green smoothie made with spinach, banana, almond milk, and a scoop of vegan protein powder.",
+      breakfast: "Kickstart your day with a refreshing green smoothie made with spinach, banana, almond milk, and a scoop of vegan protein powder.",
       morningSnack: "Munch on a small handful of almonds or rice cakes topped with avocado for a nutritious snack.",
       lunch: "Dig into a colorful Buddha bowl filled with quinoa, roasted veggies, chickpeas, and a drizzle of lemon-tahini dressing.",
       afternoonSnack: "Satisfy your hunger with a crunchy snack like air-popped popcorn or carrot sticks with hummus.",

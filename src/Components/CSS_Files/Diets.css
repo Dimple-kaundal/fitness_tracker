@@ -1,0 +1,16 @@
+.dietsContainer{
+    margin: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 2rem 0 0 0;
+     background-color: #ffcc00;
+     h2{
+        text-align: center;
+     }
+}
+.dietsContainer table{
+    border: 2px solid black;
+}
+.dietsContainer table th{
+    border: 2px solid black;
+}
