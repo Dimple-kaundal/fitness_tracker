@@ -18,10 +18,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [value, setValue] = useState([]);
-  const [globalUser, setGlobalUser] = useState(null);
   const [exercise, setExercise] = useState([]);
   const [diets, setDiets] = useState([]);
-  console.log("user set to", globalUser);
   return (
     <>
       <BrowserRouter>
@@ -45,10 +43,7 @@ function App() {
           <Route path="PlaceOrder" element={<PlaceOrder />} />
           <Route path="SignUp" element={<SignUp />} />
           <Route path="SignIn" element={<SignIn />} />
-          <Route
-            path="UserProfile"
-            element={<UserProfile globalUser={globalUser} />}
-          />
+          <Route path="UserProfile" element={<UserProfile />} />
           <Route
             path="Workout/Exercises"
             element={

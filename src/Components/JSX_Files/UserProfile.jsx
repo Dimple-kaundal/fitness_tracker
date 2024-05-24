@@ -1,7 +1,5 @@
 import React from "react";
 import "../CSS_Files/UserProfile.css";
-
-import userDp from "../_Imgs/Gym2.jpg";
 import { useUser } from "../../userContext";
 const UserProfile = ({ globalUser }) => {
   const { userData } = useUser();
@@ -10,7 +8,7 @@ const UserProfile = ({ globalUser }) => {
     <>
       <div className="userProfile">
         {/* <div className="userDp">
-          <img src={userDp} alt="" />
+          <img src={userData.profilePicture} alt="" />
         </div> */}
         <div className="userDetails">
           <h2>
