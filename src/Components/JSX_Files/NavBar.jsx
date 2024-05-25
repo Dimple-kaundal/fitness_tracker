@@ -3,8 +3,9 @@ import "../CSS_Files/NavBar.css";
 import { Link } from "react-router-dom";
 
 import Logo from "../_Imgs/Logo2.png";
-
+import { useUser } from "../../userContext";
 const NavBar = ({ value }) => {
+  const { userData } = useUser();
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -50,24 +51,43 @@ const NavBar = ({ value }) => {
               </svg>
               {/* <sup style={{ fontSize: "smaller" }}>{value.length}</sup> */}
             </p>
-
           </Link>
-          <Link to="/SignUp">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              fill="black"
-              classname="bi bi-person-circle"
-              viewBox="0 0 18 15"
-            >
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-              <path
-                fill-rule="evenodd"
-                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
-              />
-            </svg>
-          </Link>
+          {userData && (
+            <Link to="/UserProfile">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="black"
+                classname="bi bi-person-circle"
+                viewBox="0 0 18 15"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                />
+              </svg>
+            </Link>
+          )}
+          {!userData && (
+            <Link to="/SignUp">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="black"
+                classname="bi bi-person-circle"
+                viewBox="0 0 18 15"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                />
+              </svg>
+            </Link>
+          )}
         </div>
       </nav>
     </>
