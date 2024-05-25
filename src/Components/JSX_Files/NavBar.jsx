@@ -52,7 +52,7 @@ const NavBar = ({ value }) => {
               {/* <sup style={{ fontSize: "smaller" }}>{value.length}</sup> */}
             </p>
           </Link>
-          {userData && (
+          {userData ? (
             <Link to="/UserProfile">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,8 +69,7 @@ const NavBar = ({ value }) => {
                 />
               </svg>
             </Link>
-          )}
-          {!userData && (
+          ) : (
             <Link to="/SignUp">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

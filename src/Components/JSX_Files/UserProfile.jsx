@@ -2,9 +2,9 @@ import React from "react";
 import "../CSS_Files/UserProfile.css";
 import { useUser } from "../../userContext";
 import { imagefrombuffer } from "imagefrombuffer";
-
+import { Link } from "react-router-dom";
 const UserProfile = ({ globalUser }) => {
-  const { userData } = useUser();
+  const { userData, setUserData } = useUser();
   console.log("user set to ", userData);
   return (
     <>
@@ -25,6 +25,15 @@ const UserProfile = ({ globalUser }) => {
           <p>{userData.email}</p>
         </div>
       </div>
+      <Link to="/signin">
+        <button
+          onClick={() => {
+            setUserData(null);
+          }}
+        >
+          LOGOUT
+        </button>
+      </Link>
     </>
   );
 };
