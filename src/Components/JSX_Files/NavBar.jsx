@@ -24,13 +24,25 @@ const NavBar = ({ value }) => {
             <Link to="/">Home</Link>
           </li>
           <li onClick={handleScrollToTop}>
-            <Link to="/Workout">Workout</Link>
+            {userData ? (
+              <Link to="/Workout">Workout</Link>
+            ) : (
+              <Link to="/SignUp">Workout</Link>
+            )}
           </li>
           <li onClick={handleScrollToTop}>
-            <Link to="/DietPlan">Diet Plan</Link>
+            {userData ? (
+              <Link to="/DietPlan">Diet Plan</Link>
+            ) : (
+              <Link to="/SignUp">Diet Plan</Link>
+            )}
           </li>
           <li onClick={handleScrollToTop}>
-            <Link to="/Shop">Shop</Link>
+            {userData ? (
+              <Link to="/Shop">Shop</Link>
+            ) : (
+              <Link to="/SignUp">Shop</Link>
+            )}
           </li>
           <li onClick={handleScrollToTop}>
             <Link to="/AboutUs">About Us</Link>

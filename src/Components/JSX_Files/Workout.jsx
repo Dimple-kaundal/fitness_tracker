@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS_Files/Workout.css";
 
-import Banner2_img from "../_Imgs/Gym.jpg";
+// import Banner2_img from "../_Imgs/Gym.jpg";
 
 import Shoulder1 from "../_Vids/Shoulder_DumbbellFrontRaises.mp4";
 import Shoulder2 from "../_Vids/Shoulder_OverheadPresses.mp4";

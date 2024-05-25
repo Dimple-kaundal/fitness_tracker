@@ -47,9 +47,15 @@ const LandingPage = () => {
               of yourself with our fitness website. Start today and watch your
               journey to a healthier you unfold before your eyes.
             </p>
-            <Link to="/SignUp">
-              <button>Get Started</button>
-            </Link>
+            {userData ? (
+              <Link to="/Workout">
+                <button>Get Started</button>
+              </Link>
+            ) : (
+              <Link to="/SignUp">
+                <button>Get Started</button>
+              </Link>
+            )}
           </div>
         </div>
 

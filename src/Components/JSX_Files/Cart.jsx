@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../CSS_Files/Cart.css";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,6 @@ const Cart = ({ value, setValue }) => {
       behavior: "smooth",
     });
   };
-
   const items = value;
   const renderItems = () => {
     return items.map((item) => (
@@ -22,7 +21,11 @@ const Cart = ({ value, setValue }) => {
           <div className="cartitemprice">
             <span>{item.Price}</span>
           </div>
-          <div onClick={() => {setValue()}}>
+          <div
+            onClick={() => {
+              setValue();
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -84,7 +87,6 @@ const Cart = ({ value, setValue }) => {
                 </td>
                 <td>
                   <h2>
-                    {" "}
                     <small>Rs. {calculateTotal()} /-</small>
                   </h2>
                 </td>
