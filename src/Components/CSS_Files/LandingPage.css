@@ -46,6 +46,13 @@
     color: #333;
     cursor: pointer;
     animation: fadeInUp 1s ease-out;
+    transition: all .2s ease;
+}
+
+.lpbanner1_content button:hover{
+    background-color: #e1b400;
+    color: black;
+    transform: scale(1.05);
 }
 
 
@@ -71,8 +78,7 @@
 /* ------------------------------------ BANNER 2 ------------------------------------ */
 
 .lpbanner2 {
-    /* background-color: #ffcc00; */
-    padding:2%;
+    padding:0% 2% 2%;
     margin: 2%;
     border-radius: 20px;
 }
@@ -99,12 +105,15 @@
 }
 
 .lpb2card_content {
+    background-color: rgba(0,0,0,0.2);
     position: absolute;
     top: 30%;
-    left: 20px;
+    justify-content: center;
     margin: 30px;
     color: #fff;
     z-index: 1;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .lpb2card h2 {
@@ -120,15 +129,22 @@
 }
 
 .lpb2card1 {
-    background-image: url('../_Imgs/Gym.jpg');
+    background-image: url('../_Imgs/Goals.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 
 .lpb2card2 {
-    background-image: url('../_Imgs/Gym.jpg');
+    background-image: url('../_Imgs/Create\ Plan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .lpb2card3 {
-    background-image: url('../_Imgs/Gym.jpg');
+    background-image: url('../_Imgs/Tracking.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
@@ -176,7 +192,8 @@
 }
 
 .lpbanner3_image img {
-    max-width: 100%;
+    height: 60vh;
+    width: 39vw;
 }
 
 .lpbanner3_text h1 {
@@ -197,6 +214,13 @@
     border-radius: 5px;
     color: #333;
     cursor: pointer;
+    transition: all .2s ease;
+}
+
+.lpbanner3_text button:hover{
+    background-color: #e1b400;
+    color: black;
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {
@@ -245,7 +269,8 @@
 }
 
 .lpbanner4_image img {
-    max-width: 100%;
+    height: 60vh;
+    width: 39vw;
 }
 
 .lpbanner4_text {
@@ -272,6 +297,13 @@
     border-radius: 5px;
     color: #333;
     cursor: pointer;
+    transition: all .2s ease;
+}
+
+.lpbanner4_text button:hover{
+    background-color: #e1b400;
+    color: black;
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {
@@ -326,16 +358,17 @@
 }
 
 .lpbanner5_image img {
-    max-width: 100%;
+    height: 60vh;
+    width: 39vw;
 }
 
 .lpbanner5_text h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .lpbanner5_text p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
@@ -347,8 +380,14 @@
     border-radius: 5px;
     color: #333;
     cursor: pointer;
+    transition: all .2s ease;
 }
 
+.lpbanner5_text button:hover{
+    background-color: #e1b400;
+    color: black;
+    transform: scale(1.05);
+}
 
 @media screen and (max-width: 768px) {
 

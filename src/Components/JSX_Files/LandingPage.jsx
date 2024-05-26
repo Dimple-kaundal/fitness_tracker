@@ -3,36 +3,37 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../CSS_Files/LandingPage.css";
 import { useUser } from "../../userContext";
-import Banner2_img from "../_Imgs/Gym.jpg";
-import Banner3_img from "../_Imgs/Gym2.jpg";
-import Banner4_img from "../_Imgs/Gym3.jpg";
 
-import review1 from "../_Imgs/Gym2.jpg";
-import review2 from "../_Imgs/Gym2.jpg";
-import review3 from "../_Imgs/Gym2.jpg";
-import review4 from "../_Imgs/Gym2.jpg";
-import review5 from "../_Imgs/Gym2.jpg";
-import review6 from "../_Imgs/Gym2.jpg";
-import review7 from "../_Imgs/Gym2.jpg";
-import review8 from "../_Imgs/Gym2.jpg";
-import review9 from "../_Imgs/Gym2.jpg";
-import review10 from "../_Imgs/Gym2.jpg";
+import Fitness from "../_Imgs/ForgeFitness.webp"
+import Nutrition from "../_Imgs/NutritiousDiet.jpg"
+import Shop from "../_Imgs/GymShop.jpg"
+
+import review1 from "../_Imgs/Profile1.png";
+import review2 from "../_Imgs/Profile2.png";
+import review3 from "../_Imgs/Profile3.png";
+import review4 from "../_Imgs/Profile4.png";
+import review5 from "../_Imgs/Profile5.png";
+import review6 from "../_Imgs/Profile6.png";
+import review7 from "../_Imgs/Profile7.png";
+import review8 from "../_Imgs/Profile8.png";
+import review9 from "../_Imgs/Profile9.png";
+import review10 from "../_Imgs/Profile10.png";
 
 import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   const { userData, setUserData } = useUser();
   const Reviews = [
-    { id: 1, rating: "Supplement 1", review: "1000", imageUrl: review1 },
-    { id: 2, rating: "Supplement 2", review: "1000", imageUrl: review2 },
-    { id: 3, rating: "Supplement 3", review: "1000", imageUrl: review3 },
-    { id: 4, rating: "Supplement 4", review: "1000", imageUrl: review4 },
-    { id: 5, rating: "Supplement 5", review: "1000", imageUrl: review5 },
-    { id: 6, rating: "Supplement 6", review: "1000", imageUrl: review6 },
-    { id: 7, rating: "Supplement 7", review: "1000", imageUrl: review7 },
-    { id: 8, rating: "Supplement 8", review: "1000", imageUrl: review8 },
-    { id: 9, rating: "Supplement 9", review: "1000", imageUrl: review9 },
-    { id: 10, rating: "Supplement 10", review: "1000", imageUrl: review10 },
+    { id: 1, name: "Gunjan Sharma", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review1 },
+    { id: 2, name: "Avinash", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review2 },
+    { id: 3, name: "Harniman Singh", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review3 },
+    { id: 4, name: "Balraj Singh", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review4 },
+    { id: 5, name: "Ayush Kr Singh", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review5 },
+    { id: 6, name: "Bisman Singh", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review6 },
+    { id: 7, name: "Harshit Agarwal", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review7 },
+    { id: 8, name: "Divyanshu Mehra", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review8 },
+    { id: 9, name: "Karan", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review9 },
+    { id: 10, name: "Priyanshu Choudhary", review: "Comprehensive fitness website with diverse workouts, diet plans, and a convenient shop for all your health needs. Highly recommended!", imageUrl: review10 },
   ];
 
   return (
@@ -107,7 +108,7 @@ const LandingPage = () => {
               </Link>
             </div>
             <div className="lpbanner3_image">
-              <img src={Banner2_img} alt="Banner Image" />
+              <img src={Fitness} alt="Banner Image" />
             </div>
           </div>
         </div>
@@ -117,7 +118,7 @@ const LandingPage = () => {
         <div className="lpbanner4">
           <div className="lpbanner4_content">
             <div className="lpbanner4_image">
-              <img src={Banner3_img} alt="Banner Image" />
+              <img src={Nutrition} alt="Banner Image" />
             </div>
             <div className="lpbanner4_text">
               <h1>Revitalize Your Nutrition</h1>
@@ -148,7 +149,7 @@ const LandingPage = () => {
               </Link>
             </div>
             <div className="lpbanner5_image">
-              <img src={Banner4_img} alt="Banner Image" />
+              <img src={Shop} alt="Banner Image" />
             </div>
           </div>
         </div>
@@ -176,10 +177,10 @@ const LandingPage = () => {
                   <img
                     src={item.imageUrl}
                     alt={item.profile}
-                    style={{ width: "20vh", borderRadius: "50%" }}
+                    style={{ width: "17vh", height:"17vh", borderRadius: "50%" }}
                   />
-                  <p style={{ marginTop: "15px" }}>{item.rating}</p>
-                  <p style={{ marginTop: "15px" }}>{item.review}</p>
+                  <p style={{ marginTop: "15px" }}>{item.name}</p>
+                  <p style={{ marginTop: "15px", color:"grey" }}>{item.review}</p>
                 </div>
               ))}
             </Carousel>
